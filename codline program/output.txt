@@ -1,0 +1,40 @@
+C:\Users\user\PycharmProjects\pythonProject\venv\Scripts\python.exe C:\Users\user\PycharmProjects\pythonProject\TaifCodeline.py 
+welcome to the Menue-Based program!
+Please select an option:
+1.Print Pattern
+2.Rotate Array
+3.Help
+4.exit
+Enter your choice: 1
+Enter the number of rows for the pattern: 5
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+Process finished with exit code 0
+
+Enter your choice: 2
+Enter the size of the array: 7
+Enter the number of rotations: 3
+Enter the array elements: 1 2 3 4 5 6 7
+Rotated array:  [5, 6, 7, 1, 2, 3, 4]
+
+Process finished with exit code 0
+
+Enter your choice: 3
+ --Help-- 
+           Option 1: Print a  pattern with 'n' rows of decreasing asterisks.
+            Option 2: Rotate an array of  'n' elements of the right by  'k' steps.
+            Option 3: Display this help message.
+            Option 4: Exit the program.
+        
+
+Process finished with exit code 0
+
+
+Enter your choice: 4
+Exiting the program. Goodbye!
+
+Process finished with exit code 0
