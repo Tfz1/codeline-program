@@ -1,6 +1,6 @@
   # codeline_task
 solution of tasks
 
-Name: 
-Email: @gmail.com
-phone: +968 
+Name: Taif Khalifa Alabri
+Email: taif99alabri99@gmail.com
+phone: +968 97894973
