@@ -1,0 +1,39 @@
+PS C:\Users\user> & C:/Users/user/AppData/Local/Programs/Python/Python311/python.exe c:/Users/user/Desktop/python
+1 -- Print Pattern
+2 -- Rotate Array        
+3 --  Help
+4 -- Exit
+Please select an option: 1
+Enter the number of rows for the pattern: 5
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+1 -- Print Pattern       
+2 -- Rotate Array        
+3 --  Help
+4 -- Exit
+Please select an option: 2
+Enter the number of the element: 7
+Enter the number of steps: 5
+Enter the array elements: 1 2 3 4 5 6 7 
+Rotated array:  [3, 4, 5, 6, 7, 1, 2]
+1 -- Print Pattern
+2 -- Rotate Array
+3 --  Help
+4 -- Exit
+Please select an option: 3
+ --Help-- 
+           Option 1: Print a  pattern with 'n' rows of decreasing asterisks.
+            Option 2: Rotate an array of  'n' elements of the right by  'k' steps.
+            Option 3: Display this help message.
+            Option 4: Exit the program.
+
+1 -- Print Pattern
+2 -- Rotate Array
+3 --  Help
+4 -- Exit
+Please select an option: 4
+Exiting the program. Goodbye!
+PS C:\Users\user>
