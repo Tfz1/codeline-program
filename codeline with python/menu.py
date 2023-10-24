@@ -11,7 +11,7 @@ def print_menu():
         
 def option1():
       n = int(input('Enter the number of rows for the pattern: '))
-      for i in range(n, 0, -1):
+     for i in reversed(range(n)):
         print("* " * i)
 
  
