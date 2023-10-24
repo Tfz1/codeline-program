@@ -10,31 +10,24 @@ def print_menu():
         print (key, '--', menu_options[key] )
         
 def option1():
-    n=''
-    n = int(input('Enter the number of rows for the pattern: '))
- 
-    for i in range(n, 0, -1):
-        for j in range(0, i):
-            print("*", end=" ")
-        print()
+      n = int(input('Enter the number of rows for the pattern: '))
+      for i in range(n, 0, -1):
+        print("* " * i)
+
  
 def option2():
     try:
-        n = int(input("Enter the number of the element: "))
-        k = int(input("Enter the number of steps: "))
+        n = int(input("Enter the size of the array: "))
+        k = int(input("Enter the number of rotations: "))
         arr = list(map(int, input("Enter the array elements: ").split()))
-        temp = []
-        for i in range(n-k, n):
-            temp.append(arr[i])
-        for i in range(0, n-k):
-            temp.append(arr[i])
-        print("Rotated array: ", temp)
+
+        k = k % n  
+
+        rotated_array = [arr[(i - k) % n] for i in range(n)]
+        print("Rotated array:", rotated_array)
+
     except ValueError:
         print("Invalid input. Please enter valid integers for n, k, and array elements.")
-    
-    
-# except ValueError:
-#     print("Invalid input. Please enter valid integers for n, k, and array elements.")
  
 def option3():
      print(''' --Help-- 
@@ -48,23 +41,25 @@ def option4():
     print('Exiting the program. Goodbye!')
     exit()  # This will terminate the program immediately
  
-if __name__=='__main__':
-    while(True):
+if __name__ == '__main__':
+    while True:
+        print("Welcome to the Menu-Based program!")
+        print("Please select an option: ")
         print_menu()
-        option = ''
+        
         try:
-            option = int(input('Please select an option: '))
-        except:
+            option = int(input('Enter your choice: '))
+        except ValueError:
             print('Wrong input. Please enter a number ...')
-        #Check what choice was entered and act accordingly
+            continue 
+
         if option == 1:
-           option1()
+            option1()
         elif option == 2:
-         option2()
+            option2()
         elif option == 3:
             option3()
         elif option == 4:
             option4()
-            
         else:
             print('Invalid option. Please enter a number between 1 and 4.')
