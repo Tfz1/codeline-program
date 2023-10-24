@@ -18,18 +18,15 @@ def option1():
 
  
 def option2():
-    try:
-        n = int(input("Enter the size of the array: "))
-        k = int(input("Enter the number of rotations: "))
-        arr = list(map(int, input("Enter the array elements: ").split()))
+     n = int(input("Enter the number of elements: "))
+     k = int(input("Enter the number of steps: "))
+     arr = input("Enter the array elements separated by spaces: ").split()
 
-        k = k % n  
+     k %= n  # Ensure k is within the range of array size
 
-        rotated_array = [arr[(i - k) % n] for i in range(n)]
-        print("Rotated array:", rotated_array)
+     rotated_array = arr[-k:] + arr[:-k]
+     print("Rotated array:", rotated_array)
 
-    except ValueError:
-        print("Invalid input. Please enter valid integers for n, k, and array elements.")
  
 def option3():
      print(''' --Help-- 
@@ -41,7 +38,7 @@ def option3():
         
 def option4():
     print('Exiting the program. Goodbye!')
-    exit()
+    exit() 
  
 if __name__ == '__main__':
     while True:
@@ -65,3 +62,4 @@ if __name__ == '__main__':
             option4()
         else:
             print('Invalid option. Please enter a number between 1 and 4.')
+
