@@ -39,7 +39,7 @@ def option3():
         
 def option4():
     print('Exiting the program. Goodbye!')
-    exit()  # This will terminate the program immediately
+    exit()
  
 if __name__ == '__main__':
     while True:
